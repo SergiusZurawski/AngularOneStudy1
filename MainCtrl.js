@@ -15,8 +15,11 @@
         };
 
         $scope.search = function(username){
-            if(countdownInterval)
+            if(countdownInterval) {
                 $interval.cancel(countdownInterval);
+                $scope.countdown = null;
+            };
+            $location.path("/user/"+ username);
         };
 
         var countdownInterval = null;

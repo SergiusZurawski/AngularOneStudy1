@@ -1,0 +1,11 @@
+{
+  "name": "angular_one_test_app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./angular-route.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.6.2",
+    "angular-route": "1.6.2"
+  }
+}
