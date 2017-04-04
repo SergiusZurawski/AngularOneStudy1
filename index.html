@@ -3,25 +3,18 @@
 
   <head>
     <script data-require="angularjs@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <!--<script data-require="angular-route@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script> -->
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script src="MainCtrl.js"></script>
+    <script src="github.js"></script>
   </head>
 
-  <body ng-app="githugViewer"> 
-    <div ng-controller="MainCtrl">
-            {{message}}
-        <div>
-            {{error_messaga}}
-
-            <form name="searchUser" ng-submit="search(username)">
-                <input type="search" required placeholder="Username to find" ng-model="username"/>
-                <input type="submit" value="Search">
-            </form>
-
-            
-            <div ng-include="'userdetails.html'" ng-show="user"></div>
-        </div>
-    </div>
+  <body>
+      <h1> github Viewer </h1>
+      <div ng-view> </div>
   </body>
+
+  
 
 </html>
